@@ -34,11 +34,11 @@ Verify the uploaded data (Compare_mbox.py):
 
 - Run the script with the uploaded file of the email archive in comparison to a google takeout download if you have any doubts whether some details were missed.
 
-Final notes:
+Notes:
 
 - This script will start by reading the google sheet which contains the list of email IDs you wish to archive.
 - The script will then start by downloading the email messages directly from the target account to your local system/server
-- Then the script will complete the download of the emails bundled in a .mbox format (which you can later open in Outlook/Thunderbird or some other mail importint service) and continue to move the Google Drive content in the target email IDs "My Drive" to the target destination Shared Drive. Having the content moved from the source to the target ensures that any delegated permissions to the owners files remains intact.
+- Then the script will complete the download of the emails bundled in a .mbox format (which you can later open in Outlook/Thunderbird or some other mail importint service) and continue to copy the Google Drive content in the target email IDs "My Drive" to the target destination Shared Drive. IMPORTANT: Having the content copied from the source to the target removes any delegated permissions from the file owners, the same applies to folders. Make a list of file permissions separately if you need to retain the inhereted file permission rights at a later point in time.
 - Once the mbox and drive processes are complete the script will then upload the mbox file to the shared drive location and post the result in the Google spreadsheet ID you provided earlier.
 - After the upload is completed you can verify the data consistency between Google takeout and the python script downloaded version.
 - This script works on batch processing mode to avoid hitting the free API hourly/daily limit while archiving via a free Google Cloud platform service account.
