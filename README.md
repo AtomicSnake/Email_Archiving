@@ -4,7 +4,7 @@ A code built to archive Email & Google Drive Data for different email accounts i
 
 
 
-+++++++++++++++++++++++++++++++++++++++ INSTRUCTIONS ++++++++++++++++++++++++++++++++++++++++
+INSTRUCTIONS
 
 Pre-requisites:
 
